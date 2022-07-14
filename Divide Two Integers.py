@@ -19,7 +19,7 @@ class Solution:
         res=0
         while(dividend-divisor>=0):
             c=0
-            while( dividend - (divisor<<1<<c) >=0 ):    # a<<b is same as a*b
+            while( dividend - (divisor<<1<<c) >=0 ):    # a<<b is same as a*2^b
                 c+=1
             res+=(1<<c)
             dividend-=(divisor<<c)
